@@ -14,7 +14,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'rodjek/vim-puppet'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'godlygeek/tabular'
-Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle "tomtom/tlib_vim"
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
