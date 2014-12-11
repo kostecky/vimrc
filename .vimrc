@@ -9,7 +9,7 @@ call vundle#rc()
 " required!
 Bundle 'gmarik/vundle'
 
-" Other plugins we manage
+" Other plugins Vundle manages
 Bundle 'scrooloose/syntastic'
 Bundle 'rodjek/vim-puppet'
 Bundle 'Valloric/YouCompleteMe'
@@ -31,6 +31,7 @@ set viminfo='10,\"100,:20,%,n~/.viminfo
 filetype plugin indent on
 syntax on
 
+" Ensure that vim returns to the last position you were in the file you opened
 function! ResCur()
   if line("'\"") <= line("$")
     normal! g`"
