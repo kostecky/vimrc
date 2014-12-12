@@ -1,13 +1,13 @@
 set nocompatible              " be iMproved
 filetype off                  " required to get Vundle to work, it's enabled later on
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 " Other plugins Vundle manages
 Bundle 'scrooloose/syntastic'
@@ -19,6 +19,10 @@ Bundle "tomtom/tlib_vim"
 Bundle 'honza/vim-snippets'
 Bundle 'garbas/vim-snipmate'
 
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on
+
 set nonumber
 set backspace=indent,eol,start
 set showmatch
@@ -28,7 +32,6 @@ set shiftwidth=4
 set ai
 set viminfo='10,\"100,:20,%,n~/.viminfo
 
-filetype plugin indent on
 syntax on
 
 " Ensure that vim returns to the last position you were in the file you opened
