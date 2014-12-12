@@ -89,4 +89,5 @@ OS X Installation
 ```
 # Always --rebase on a pull
 git config --global --bool pull.rebase true
+git config --global push.default simple
 ```
