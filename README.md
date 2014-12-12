@@ -71,10 +71,12 @@ OS X Installation
    ./install.sh --clang-completer
    ```
 
-9. Install the appropriate linters for python, puppet, ruby, yaml
+9. Install the appropriate linters and software for python, puppet, ruby, yaml
 
    ```
    pip install flake8
+   gem install puppet
+   gem install hiera-eyaml
    gem install puppet-lint
    gem install ruby-lint
    npm install -g js-yaml
