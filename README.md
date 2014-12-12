@@ -83,3 +83,10 @@ OS X Installation
    ```
 
 10. You're ready to work with puppet!
+
+#Additional configurations
+
+```
+# Always --rebase on a pull
+git config --global --bool pull.rebase true
+```
