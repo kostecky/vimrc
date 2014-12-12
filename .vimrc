@@ -17,11 +17,18 @@ Bundle 'godlygeek/tabular'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle "tomtom/tlib_vim"
 Bundle 'honza/vim-snippets'
-Bundle 'garbas/vim-snipmate'
+Bundle 'SirVer/ultisnips'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on
+
+let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
+
+let g:UltiSnipsExpandTrigger="<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
 
 set nonumber
 set backspace=indent,eol,start
