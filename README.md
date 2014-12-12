@@ -54,9 +54,9 @@ OS X Installation
 7. Exit vim, reload it, and run :PluginInstall
 
    ```
-   <in vim> :q
+   #<in vim> :q
    vim ~/.vimrc
-   <in vim> :PluginInstall
+   #<in vim> :PluginInstall
    
    # or from the command line
    vim +PluginInstall +qall
