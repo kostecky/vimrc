@@ -35,10 +35,14 @@ set backspace=indent,eol,start
 set showmatch
 set expandtab
 set tabstop=2
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
 set ai
 set viminfo='10,\"100,:20,%,n~/.viminfo
 
+" use 4 spaces in Python and PowerShell
+autocmd FileType python setlocal ts=4 sts=4 sw=4
+    
 syntax on
 
 " Ensure that vim returns to the last position you were in the file you opened
