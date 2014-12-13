@@ -45,6 +45,9 @@ autocmd FileType python setlocal ts=4 sts=4 sw=4
     
 syntax on
 
+" Make encrypting strings and inserting in to document super easy ;)
+command -nargs=1 Eyaml :read !eyaml encrypt -o block -s <args> 2> /dev/null
+
 " Ensure that vim returns to the last position you were in the file you opened
 function! ResCur()
   if line("'\"") <= line("$")
